@@ -26,38 +26,52 @@
 				</ul>
 			</nav>
 			<div class="user-block">
-				<form  action=" "  method="post"> 
-					<div class="search">
-						<div class="search-image">
-							<a href="#" class="link" ></a>
+				<div class="search">
+					<div class="search-image">
+						<a href="#" class="link"></a>
+					</div>
+					<form class="search-info">
+						<input type="search" name="search" class="input-search" required>
+						<label>Что ищем?</label>
+					</form>
+				</div>
+				<div class="registration">
+					<a class="login" href="#">Вход</a>
+					<form action=" " method="post">
+						<div class="email">
+							<input type="email" name="email"><label>Электронная почта</label>
 						</div>
-						<div class="search-info">
-							<form>
-								<input type="search" name="search" class="input-search" required>
-								<label>Что ищем?</label>
-							</form>	
+						<div class="password">
+							<input type="password" name="password"><label>Пароль</label>
+						</div>
+						<div>
+							<a class="login" href="#">Войти</a>
+						</div>	
+						<div>	
+							<a href="#"> Забыли пароль</a>
+							<a href="#"> Новая регистрация</a>
+						</div>
+					</form>	
+				</div>		
+				<div class="backet">	
+					<a class="backet" href="#">Пусто</a>	
+					<div class="item-cart">
+						<div>
+							<img src="img/x.png.">
+							<img src="img/ice.jpg.">
+							<p>Пломбир с апельсиновым джемом</p> 
+							<p>1,5 кг х 200 руб.</p> 
+							<p>300 руб.</p>
+						</div>	
+						<div class="backet">
+							<p>Клубничный пломбир с присыпкой<br> из белого шоколада 1,5 кг х 300 руб. 450 руб.</p>
+						</div>
+						<div>
+							<p class="backet">Итого: 750руб.</p>
+							<a href="#">Оформить заказ</a>
 						</div>
 					</div>
-				</form>
-					<div class="registration">
-						<a class="login" href="#">Вход</a>
-							<form action=" " method="post">
-								<div class="email">
-									<input type="email" name="email" placeholder="Электронная почта">
-								</div>
-								<div class="password">
-									<input type="password" name="password" placeholder="Пароль">
-								</div>
-								<div>
-									<a class="login" href="#">Войти</a>
-								</div>	
-								<div>	
-									<a href="#"> Забыли пароль</a>
-									<a href="#"> Новая регистрация</a>
-								</div>
-							</form>	 
-						<a class="backet" href="#">Пусто</a>	
-					</div>
+				</div>
 			</div>
 			<div  class="how-we-work">
 				<p>С 10 до 20, ежедневно</p>
@@ -77,36 +91,36 @@
 			</div>
 			<div class="card">
 				<div class="card-1">
-					<h2>Малинка даром!</h2>
-					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>	
-					<a href="#">Хочу варенье!</a> 
+					<h2 class="card-1">Малинка даром!</h2>
+					<p class="card-1">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>	
+					<a href="#" class="card-btn">Хочу варенье!</a> 
 				</div>	
 				<div class="card-2">
-					<h2>Шоколадки даром!</h2>
-					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>	
-					<a href="#">Хочу варенье!</a> 
+					<h2 class="card-1">Шоколадки даром!</h2>
+					<p class="card-1">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>	
+					<a href="#" class="card-btn">Хочу варенье!</a> 
 				</div>
 			</div>	
 			<div class="item-wrap">
-				<div class="example">
-					<img class="example" src="img/ice.jpg" alt="ice">
-					<p class="example">310<span>&#8381;</span>кг</p>
-					<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+				<div class="product-item">
+					<img class="product-item" src="img/ice.jpg" alt="ice">
+					<p class="product-item">310<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
 				</div>
-				<div class="example">
-					<img class="example"  src="img/ice.jpg" alt="ice">
-					<p class="example">380<span>&#8381;</span>кг</p>
-					<p>Сливочно-кофейное с кусочками шоколада</p>
+				<div class="product-item">
+					<img class="product-item"  src="img/ice.jpg" alt="ice">
+					<p class="product-item">380<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
 				</div>
-				<div class="example">
-					<img class="example" src="img/ice.jpg" alt="ice">
-					<p class="example">355<span>&#8381;</span>кг</p>
-					<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+				<div class="product-item">
+					<img class="product-item" src="img/ice.jpg" alt="ice">
+					<p class="product-item">355<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
 				</div>
-				<div class="example">
-					<img class="example" src="img/ice.jpg" alt="ice">
-					<p class="example">415<span>&#8381;</span>кг</p>
-					<p class="example">Сливочное крем-брюле с карамельной подливкой</p>
+				<div class="product-item">
+					<img class="product-item" src="img/ice.jpg" alt="ice">
+					<p class="product-item">415<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
 				</div>
 			</div>
 				<div class="tehnology">
@@ -156,14 +170,16 @@
 									<h4>Адрес главного офиса и<br>
 									офлайн магазина:
 									</h4>
-									<p>ул. Большая Конюшенная 19/8,</p>
-									<p>Санкт-Петербург</p>
-								<div class="adress-tel">
-									<p>Для заказов по телефону:</p>
-									<p>8 812 450-25-25</p>
-									<p>(с 10 до 20 ежедневно)</p>
-									<a href="#">Форма обратной связи</a> 
-								</div>	
+									<div class="adress-tel">
+										<p>ул. Большая Конюшенная 19/8,</p>
+										<p>Санкт-Петербург</p>
+									</div>	
+									<div class="adress-tel">
+										<p>Для заказов по телефону:</p>
+										<p>8 812 450-25-25</p>
+										<p>(с 10 до 20 ежедневно)</p>
+										<a href="#">Форма обратной связи</a> 
+									</div>	
 								</div>
 							</div>		
 						</div>
@@ -198,10 +214,10 @@
 			<form action=" " method="post">
 				<h2>Мы обязательно вам ответим</h2>
 				<div class="name">
-					<input type="text" name="name" placeholder="Как вас зовут?">
+					<input type="text" name="name" ><label>Как вас зовут?</label>
 				</div>	
 				<div class="name">
-					<input type="email" name="email" placeholder="Ваша почта для ответа?">
+					<input type="email" name="email" ><label>Ваша почта дял ответа?</label>
 				</div>
 				<div class="comment">
 					<textarea name="comment"  placeholder="Напишите что-нибудь.." rows="4" cols="21"></textarea>

@@ -26,49 +26,52 @@
 				</ul>
 			</nav>
 			<div class="user-block">
-				<form  action=" "  method="post"> 
-					<div class="search">
-						<div class="search-image">
-							<a href="#" class="link" ></a>
+				<div class="search">
+					<div class="search-image">
+						<a href="#" class="link"></a>
+					</div>
+					<form class="search-info">
+						<input type="search" name="search" class="input-search" required>
+						<label>Что ищем?</label>
+					</form>
+				</div>
+				<div class="registration">
+					<a class="login" href="#">Вход</a>
+					<form action=" " method="post">
+						<div class="email">
+							<input type="email" name="email"><label>Электронная почта</label>
 						</div>
-						<div class="search-info">
-							<form>
-								<input type="search" name="search" class="input-search" required>
-								<label>Что ищем?</label>
-							</form>	
+						<div class="password">
+							<input type="password" name="password"><label>Пароль</label>
+						</div>
+						<div>
+							<a class="login" href="#">Войти</a>
+						</div>	
+						<div>	
+							<a href="#"> Забыли пароль</a>
+							<a href="#"> Новая регистрация</a>
+						</div>
+					</form>	
+				</div>		
+				<div class="backet">	
+					<a class="backet" href="#">Пусто</a>	
+					<div class="item-cart">
+						<div>
+							<img src="img/x.png.">
+							<img src="img/ice.jpg.">
+							<p>Пломбир с апельсиновым джемом</p> 
+							<p>1,5 кг х 200 руб.</p> 
+							<p>300 руб.</p>
+						</div>	
+						<div class="backet">
+							<p>Клубничный пломбир с присыпкой<br> из белого шоколада 1,5 кг х 300 руб. 450 руб.</p>
+						</div>
+						<div>
+							<p class="backet">Итого: 750руб.</p>
+							<a href="#">Оформить заказ</a>
 						</div>
 					</div>
-				</form>
-					<div class="registration">
-						<a class="login" href="#">Вход</a>
-							<form action=" " method="post">
-								<div class="email">
-									<input type="email" name="email" placeholder="Электронная почта">
-								</div>
-								<div class="password">
-									<input type="password" name="password" placeholder="Пароль">
-								</div>
-								<div>
-									<a class="login" href="#">Войти</a>
-								</div>	
-								<div>	
-									<a href="#"> Забыли пароль</a>
-									<a href="#"> Новая регистрация</a>
-								</div>
-							</form>	
-					</div>		
-							<div class="backet">	
-								<a class="backet" href="#">Пусто</a>	
-								<div class="item-cart">
-									<p>Пломбир с апельсиновым джемом <span>1,5 кг х 200 руб.</span><span> 300 руб.</span>
-									<p>Клубничный пломбир с присыпкой из белого шоколада <span>1,5 кг х 300 руб.</span><span> 450 руб.</span>
-									<hr>
-									<p>Итого: 750руб.</p>
-									<form action=" " method="post" >
-										<input type="submit" name="order" value="Оформить заказ"/>
-									</form>
-								</div>
-							</div>
+				</div>
 			</div>
 			<div class="how-we-work">
 				<p>С 10 до 20, ежедневно</p>
@@ -78,121 +81,119 @@
 	</header>
 	<main>
 		<div class="container">
-			<div class="main-nav">
+			<div class="breadcrumbs">
 				<ul>
-					<li><a href="#">Главная</a></li>
+					<li>Главная</li>
 					<li><a href="#">Каталог</a></li>
 					<li><a href="#">Сливочное</a></li>
 				</ul>	
 			<h1>Сливочное мороженое</h1>
 			</div>
 			<div>	
-				<p>Сортировка:</p>
-				<ul>
-					<li><a href="3">По популярности</a>
-				<ul>
-					<li><a href="3">сначала недорогие</a></li>
-					<li><a href="3">сначала дорогие</a></li>
-					<li><a href="3">по жирности</a></li>
-				</ul>
+				<form action=" " method="post">
+					<p>Сортировка:</p>
+					<select  multiple>
+						<option selected>По популярности</option>
+						<option>сначала недорогие</option>
+						<option>сначала дорогие</option>
+						<option>по жирности</option>
+					<select>
+				</form>	
 			</div>	
 			<div class="setting">
-				<p>Цена: 100 руб. -500 руб.Б.</p>
-				<input type="range">
+				<form action=" " method="post">	
+					<p>Цена: 100 руб. -500 руб.Б.</p>
+					<input type="range">
+					<p>Жирность:</p>
+					<input type="radio"><label>0%</label>
+					<input type="radio" checked><label>до 10%</label>
+					<input type="radio"><label>до 30%</label>
+					<input type="radio"><label>выше 30%</label>
+					<p>Наполнители</p>
+					<input type="checkbox" checked><label>шоколадные</label>
+					<input type="checkbox" checked><label>сахарные присыпки</label>
+					<input type="checkbox" ><label>фрукты</label>
+					<input type="checkbox" ><label>сиропы</label>
+					<input type="checkbox" ><label>джемы</label>
+					<span>Применить</span>
+				</form>
 			</div>	
-			<div class="setting">
-				<p>Жирность:</p>
-				<input type="radio" ><span>0%</span>
-				<input type="radio" checked><span>до 10%</span>
-				<input type="radio" ><span>до 30%</span>
-				<input type="radio" ><span>выше 30%</span>
+		</div>		
+			<div class="item-wrap">
+				<div class="product-item">
+					<img class="product-item" src="img/ice.jpg" alt="ice">
+					<p class="product-item">310<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+				</div>
+				<div class="product-item">
+					<img class="product-item" src="img/ice.jpg" alt="ice">
+					<p class="product-item">380<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
+				</div>
+				<div class="product-item">
+					<img class="product-item" src="img/ice.jpg" alt="ice">
+					<p class="product-item">355<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+				</div>
+				<div class="product-item">
+					<img class="product-item" src="img/ice.jpg" alt="ice">
+					<p class="product-item">415<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+				</div>
+			</div>
+			<div class="item-wrap">
+				<div class="product-item">
+					<img class="product-item" src="img/ice.jpg" alt="ice">
+					<p class="product-item">325<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочное с брусничным джемом</a></p>
+				</div>
+				<div class="product-item">
+					<img class="product-item"  src="img/ice.jpg" alt="ice">
+					<p class="product-item">410<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочно-черничное с цельными ягодами черники</a></p>
+				</div>
+				<div class="product-item">
+					<img class="product-item" src="img/ice.jpg" alt="ice">
+					<p class="product-item">375<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочно-лимонное с карамельной присыпкой</a></p>
+				</div>
+				<div class="product-item">
+					<img class="product-item" src="img/ice.jpg" alt="ice">
+					<p class="product-item">320<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочное с шоколадной стружкой</a></p>
+				</div>
+			</div>
+			<div class="item-wrap">
+				<div class="product-item">
+					<img class="product-item" src="img/ice.jpg" alt="ice">
+					<p class="product-item">440<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочно-ванильное с кусочками шоколада</a></p>
+				</div>
+				<div class="product-item">
+					<img class="product-item"  src="img/ice.jpg" alt="ice">
+					<p class="product-item">435<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочноe с ментоловым сиропом</a></p>
+				</div>
+				<div class="product-item">
+					<img class="product-item" src="img/ice.jpg" alt="ice">
+					<p class="product-item">355<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочное с кусочками черного шоколада</a></p>
+				</div>
+				<div class="product-item">
+					<img class="product-item" src="img/ice.jpg" alt="ice">
+					<p class="product-item">420<span>&#8381;</span>кг</p>
+					<p><a href="#">Сливочное с мятным сиропом</a></p>
+				</div>
+			</div>
+			<div class="pagination">
+				<ul>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+				</ul>	
 			</div>	
-			
-			<div class="sort-additive">
-				<p>Наполнители</p>
-				<input type="checkbox" checked><span>шоколадные</span>
-				<input type="checkbox" checked><span>сахарные присыпки</span>
-				<input type="checkbox" ><span>фрукты</span>
-				<input type="checkbox" ><span>сиропы</span>
-				<input type="checkbox" ><span>джемы</span>
-				<span>Применить</span>
-			</div>		
-			<div class="item-wrap">
-				<div class="example">
-					<img class="example" src="img/ice.jpg" alt="ice">
-					<p class="example">310<span>&#8381;</span>кг</p>
-					<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-				</div>
-				<div class="example">
-					<img class="example" src="img/ice.jpg" alt="ice">
-					<p class="example">380<span>&#8381;</span>кг</p>
-					<p>Сливочно-кофейное с кусочками шоколада</p>
-				</div>
-				<div class="example">
-					<img class="example" src="img/ice.jpg" alt="ice">
-					<p class="example">355<span>&#8381;</span>кг</p>
-					<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-				</div>
-				<div class="example">
-					<img class="example" src="img/ice.jpg" alt="ice">
-					<p class="example">415<span>&#8381;</span>кг</p>
-					<p class="example">Сливочное крем-брюле с карамельной подливкой</p>
-				</div>
-			</div>
-			<div class="item-wrap">
-				<div class="example">
-					<img class="example" src="img/ice.jpg" alt="ice">
-					<p class="example">325<span>&#8381;</span>кг</p>
-					<p>Сливочное с брусничным джемом</p>
-				</div>
-				<div class="example">
-					<img class="example"  src="img/ice.jpg" alt="ice">
-					<p class="example">410<span>&#8381;</span>кг</p>
-					<p>Сливочно-черничное с цельными ягодами черники </p>
-				</div>
-				<div class="example">
-					<img class="example" src="img/ice.jpg" alt="ice">
-					<p class="example">375<span>&#8381;</span>кг</p>
-					<p>Сливочно-лимонное с карамельной присыпкой</p>
-				</div>
-				<div class="example">
-					<img class="example" src="img/ice.jpg" alt="ice">
-					<p class="example">320<span>&#8381;</span>кг</p>
-					<p class="example">Сливочное с шоколадной стружкой</p>
-				</div>
-			</div>
-			<div class="item-wrap">
-				<div class="example">
-					<img class="example" src="img/ice.jpg" alt="ice">
-					<p class="example">440<span>&#8381;</span>кг</p>
-					<p>Сливочно-ванильное с кусочками шоколада</p>
-				</div>
-				<div class="example">
-					<img class="example"  src="img/ice.jpg" alt="ice">
-					<p class="example">435<span>&#8381;</span>кг</p>
-					<p>Сливочноe с ментоловым сиропом</p>
-				</div>
-				<div class="example">
-					<img class="example" src="img/ice.jpg" alt="ice">
-					<p class="example">355<span>&#8381;</span>кг</p>
-					<p>Сливочное с кусочками черного шоколада</p>
-				</div>
-				<div class="example">
-					<img class="example" src="img/ice.jpg" alt="ice">
-					<p class="example">420<span>&#8381;</span>кг</p>
-					<p class="example">Сливочное с мятным сиропом</p>
-				</div>
-			</div>
-						
-				<div class="page-number">
-					<ul>
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-					</ul>	
-				</div>	
 		</div>
 	</main>
 	<footer>
@@ -218,6 +219,5 @@
 			</div>	
 		</div>	
 	</footer>
-    	
-  </body>
+    </body>
 </html>
