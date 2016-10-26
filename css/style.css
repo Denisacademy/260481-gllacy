@@ -1,0 +1,29 @@
+﻿body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	background: #849d8f;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+h1 {
+	font-weight: bold;	
+	font-size: 60px;
+	color: #ffffff;
+	line-height: 60px;
+}
+
+.card h2 {
+	font-size: 35px;
+	color: #ffffff;	
+	line-height: 41px;
+}
+
+.shop-info h2 {
+	color: #323232;
+	line-height: 22px;
+}
+
+
+
