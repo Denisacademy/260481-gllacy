@@ -7,13 +7,13 @@
   </head>
   <body>
 	<header>
-		<div class="container">
+		<div class="container clearfix">
 			<div class="logo">
 				<img src="img/logo.png" width="156" height="60" alt="logo">
 			</div>		
-			<nav class="head-navigattion">
+			<nav class="head-navigation">
 				<ul class="menu">
-					<li><a href="#">Каталог</a>
+					<li class="list"><a href="#">Каталог</a>
 						<ul class="submenu">
 							<li><a href="#">Новинки</a></li>
 							<li><a href="#">Сливочное</a></li>
@@ -22,50 +22,55 @@
 							<li><a href="#">Мелорин</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Доставка и оплата</a></li>
-					<li><a href="#">О компании</a></li>
+					<li class="list"><a href="#">Доставка и оплата</a></li>
+					<li class="list"><a href="#">О компании</a></li>
 				</ul>
 			</nav>
-			<div class="user-block">
-				<div class="search">
-					<div class="search-image">
-						<a href="#" class="link"></a>
+			<div class="test">	
+				<div class="user-block">
+					<div class="search">
+						<div class="search-image">
+							<a href="#" class="link"></a>
+						</div>
+						<form class="search-info">
+							<input type="search" name="search" class="input-search" required>
+							<label>Что ищем?</label>
+						</form>
 					</div>
-					<form class="search-info">
-						<input type="search" name="search" class="input-search" required>
-						<label>Что ищем?</label>
-					</form>
+					<div class="registration">
+						<a class="login" href="#">Вход</a>
+						<div class="form-user">
+							<form action=" " method="post">
+								<div class="email">
+									<input type="email" name="email"><label>Электронная почта</label>
+								</div>
+								<div class="password">
+									<input type="password" name="password"><label>Пароль</label>
+								</div>
+								<div>
+									<button type="submit" class="login" >Войти</button>
+								</div>	
+								<div>	
+									<a href="#"> Забыли пароль</a>
+									<a href="#"> Новая регистрация</a>
+								</div>
+							</form>	
+						</div>
+					</div>	
+					<div class="backet">	
+						<a class="backet" href="#">Пусто</a>	
+					</div>
 				</div>
-				<div class="registration">
-					<a class="login" href="#">Вход</a>
-					<form action=" " method="post">
-						<div class="email">
-							<input type="email" name="email"><label>Электронная почта</label>
-						</div>
-						<div class="password">
-							<input type="password" name="password"><label>Пароль</label>
-						</div>
-						<div>
-							<button type="submit" class="login" >Войти</button>
-						</div>	
-						<div>	
-							<a href="#"> Забыли пароль</a>
-							<a href="#"> Новая регистрация</a>
-						</div>
-					</form>	
-				</div>		
-				<div class="backet">	
-					<a class="backet" href="#">Пусто</a>	
+				<div  class="how-we-work">
+					<p>С 10 до 20, ежедневно</p>
+					<p>8 812 450-25-25</p>
 				</div>
-			</div>
-			<div  class="how-we-work">
-				<p>С 10 до 20, ежедневно</p>
-				<p>8 812 450-25-25</p>
 			</div>
 		</div>	
 	</header>
+	
 	<main>
-		<div class="container">
+		<div class="container clearfix">
 			<div class="wrapper">
 				<div class="ice-cream">
 					<img src="img/ice1.png" alt="ice">
@@ -87,7 +92,7 @@
 						<a href="#" class="card-btn">Хочу варенье!</a> 
 					</div>
 				</div>	
-				<div class="item-wrap">
+				<div class="item-wrap clearfix">
 					<div class="product-item">
 						<img class="product-item" src="img/item1.jpg" alt="ice">
 						<p class="product-item">310<span>&#8381;</span>кг</p>
@@ -109,72 +114,80 @@
 						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 					</div>
 				</div>
-				<div class="tehnology">
-					<div class="shop-info">
-						<h2>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
-					</div>
-					<div class="description-wrapper">
-						<div class="description">
-							<img src="img/icon.png" alt="icon-left">
-							<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-						</div>	
-						<div class="description">
-							<img src="img/icon.png" alt="icon-left">
-							<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
+				<div class="technology clearfix">
+					<div class="wrap-shop">
+						<div class="shop-info">
+							<h2>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
 						</div>
-						<div class="description">
-							<img src="img/icon.png" alt="icon-right">
-							<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+						<div class="description-wrapper clearfix">
+							<div class="left-column">
+								<div class="description">
+									
+									<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+								</div>	
+								<div class="description">
+									
+									<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
+								</div>
+							</div>
+							<div class="right-column">
+								<div class="description">
+									
+									<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+								</div>
+								<div class="description">
+									
+									<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+								</div>
+							</div>	
 						</div>
-						<div class="description">
-							<img src="img/icon.png" alt="icon-right">
-							<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-						</div>
-					</div>		
+					</div>	
 					<div class="recipe">
-						<div class="recipe-left">
-							<h4>Новое в нашем блоге</h4>	
-							<p>10 способов сервировки
-							фруктовых щербетов
-							к столу
-							</p>	
-						</div>
-						<div class="recipe-right">
-							<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-							<div class="recipe-email">
-								<form action=" " method="post">
-									<input type="email" placeholder="Электронная почта">
-									<button class="btn" type="submit">Отправить</button>
-								</form>
+						<div class="recipe-wrap clearfix">
+							<div class="recipe-left">
+								<h4>Новое в нашем блоге</h4>	
+								<p>10 способов сервировки
+								фруктовых щербетов
+								к столу
+								</p>	
 							</div>
-						</div>
-						<div class="map-wrapper">
-							<div class="big-map">
-								<img src=" " alt="map">
-								<a href="#"><img src="img/ice-map.png " alt="Рожок"></a>
-								<div class="contact-map">
-									<div class="adress-map">
-										<h4>Адрес главного офиса и<br>
-										офлайн магазина:
-										</h4>
-										<div class="adress-tel">
-											<p>ул. Большая Конюшенная 19/8,
-											Санкт-Петербург</p>
-										</div>	
-										<div class="adress-tel">
-											<p>Для заказов по телефону:</p>
-											<p>8 812 450-25-25</p>
-											<p>(с 10 до 20 ежедневно)</p>
-											<a href="#">Форма обратной связи</a> 
-										</div>	
-									</div>
-								</div>		
+							<div class="recipe-right">
+								<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+								<div class="recipe-email">
+									<form action=" " method="post">
+										<input type="email" placeholder="Электронная почта">
+										<button class="btn" type="submit">Отправить</button>
+									</form>
+								</div>
 							</div>
-						</div>
+						</div>	
 					</div>
 				</div>		
 			</div>
 		</div>	
+		<div class="map-wrapper">
+			<div class="big-map">
+				<img src=" " alt="map">
+				<a href="#"><img src="img/ice-map.png " alt="Рожок"></a>
+				<div class="contact-map">
+					<div class="adress-map">
+						<h4>Адрес главного офиса и<br>
+						офлайн магазина:
+						</h4>
+						<div class="adress-tel">
+							<p>ул. Большая Конюшенная 19/8,
+							Санкт-Петербург</p>
+						</div>	
+						<div class="adress-tel">
+							<p>Для заказов по телефону:</p>
+							<p>8 812 450-25-25</p>
+							<p>(с 10 до 20 ежедневно)</p>
+							<a href="#">Форма обратной связи</a> 
+						</div>	
+					</div>
+				</div>		
+			</div>
+		</div>
 	</main>
 	<footer>
 		<div class="container">
