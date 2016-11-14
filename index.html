@@ -4,16 +4,18 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   </head>
   <body>
 	<header>
 		<div class="container clearfix">
 			<div class="logo">
-				<img src="img/logo.png" width="156" height="60" alt="logo">
+				<img src="img/logo.png" width="156" min-height="60" alt="logo">
 			</div>		
 			<nav class="head-navigation">
 				<ul class="menu">
-					<li class="list"><a href="#">Каталог</a>
+					<li  class="list"><a href="#">Каталог</a>
 						<ul class="submenu">
 							<li><a href="#">Новинки</a></li>
 							<li><a href="#">Сливочное</a></li>
@@ -73,45 +75,61 @@
 		<div class="container clearfix">
 			<div class="wrapper">
 				<div class="ice-cream">
-					<img src="img/ice1.png" alt="ice">
-					<img src="img/ice2.png" alt="ice">
+					<img src="img/ice-bg.png" alt="ice">
+					
 				</div>
 				<div class="ice-btn">
 					<h1>Крем-брюле и пломбир с малиновым джемом</h1>
-					<a href="#">Давайте оба</a> 
+					<a href="#">Давайте оба!</a> 
 				</div>
-				<div class="card-wrapper">
+				<div class="card-wrapper clearfix">
 					<div class="card">
 						<h2 class="card-title">Малинка даром!</h2>
 						<p class="card-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>	
-						<a href="#" class="card-btn">Хочу варенье!</a> 
+						<div class="link-card">
+							<a href="#" class="card-btn">Хочу варенье!</a> 
+						</div>	
 					</div>	
 					<div class="card">
 						<h2 class="card-title">Шоколадки даром!</h2>
 						<p class="card-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>	
-						<a href="#" class="card-btn">Хочу варенье!</a> 
+						<div class="link-card">
+							<a href="#" class="card-btn">Хочу шоколадки!</a>
+						</div>
 					</div>
 				</div>	
 				<div class="item-wrap clearfix">
 					<div class="product-item">
-						<img class="product-item" src="img/item1.jpg" alt="ice">
-						<p class="product-item">310<span>&#8381;</span>кг</p>
+						<img class="product-item-img" src="img/item1.jpg" alt="ice">
+						<p class="product-item-text">310<span>&#8381;</span>кг</p>
 						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-					</div>
+						<div class="layer">
+							<a href="#">Быстрый просмотр</a>
+						</div>
+					</div>	
 					<div class="product-item">
-						<img class="product-item"  src="img/item2.jpg" alt="ice">
-						<p class="product-item">380<span>&#8381;</span>кг</p>
+						<img class="product-item-img"  src="img/item2.jpg" alt="ice">
+						<p class="product-item-text">380<span>&#8381;</span>кг</p>
 						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+						<div class="layer">
+							<a href="#">Быстрый просмотр</a>
+						</div>
 					</div>
 					<div class="product-item">
-						<img class="product-item" src="img/item3.jpg" alt="ice">
-						<p class="product-item">355<span>&#8381;</span>кг</p>
+						<img class="product-item-img" src="img/item3.jpg" alt="ice">
+						<p class="product-item-text">355<span>&#8381;</span>кг</p>
 						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+						<div class="layer">
+							<a href="#">Быстрый просмотр</a>
+						</div>
 					</div>
 					<div class="product-item">
-						<img class="product-item" src="img/item4.jpg" alt="ice">
-						<p class="product-item">415<span>&#8381;</span>кг</p>
+						<img class="product-item-img" src="img/item4.jpg" alt="ice">
+						<p class="product-item-text">415<span>&#8381;</span>кг</p>
 						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+						<div class="layer">
+							<a href="#">Быстрый просмотр</a>
+						</div>
 					</div>
 				</div>
 				<div class="technology clearfix">
@@ -142,7 +160,7 @@
 							</div>	
 						</div>
 					</div>	
-					<div class="recipe">
+					
 						<div class="recipe-wrap clearfix">
 							<div class="recipe-left">
 								<h4>Новое в нашем блоге</h4>	
@@ -161,20 +179,20 @@
 								</div>
 							</div>
 						</div>	
-					</div>
+					
 				</div>		
 			</div>
 		</div>	
 		<div class="map-wrapper">
-			<div class="big-map">
-				<img src=" " alt="map">
-				<a href="#"><img src="img/ice-map.png " alt="Рожок"></a>
-				<div class="contact-map">
+			<div class="big-map container">
+				
+				<!-- <a href="#"><img src="img/ice-map.png " alt="Рожок"></a> -->
+				<div class="contact-map clearfix">
 					<div class="adress-map">
 						<h4>Адрес главного офиса и<br>
 						офлайн магазина:
 						</h4>
-						<div class="adress-tel">
+						<div class="adress-str">
 							<p>ул. Большая Конюшенная 19/8,
 							Санкт-Петербург</p>
 						</div>	
@@ -190,23 +208,23 @@
 		</div>
 	</main>
 	<footer>
-		<div class="container">
+		<div class="container clearfix">
 			<div class="social">
 				<a class="social-twitter" href="#">twitter</a>
 				<a class="social-instagram" href="#">instagram</a>
 				<a class="social-facebook" href="#">facebook</a>
 				<a class="social-vk" href="#">Вконтакте</a>
 			</div>
-				<div class="wraper">
-					<div class="caterer">
-						<a href="#">Для поставщиков</a>
-						<a href="#">О производстве</a>
-					</div>
-					<div class="our-documents">
-						<a href="#">Наши документы</a>
-						<a href="#">Экологические стандарты</a>
-					</div>
-				</div>	
+			<div class="wraper">
+				<div class="caterer">
+					<a href="#">Для поставщиков</a>
+					<a href="#">О производстве</a>
+				</div>
+				<div class="our-documents">
+					<a href="#">Наши документы</a>
+					<a href="#">Экологические стандарты</a>
+				</div>
+			</div>	
 			<div class="copyright">
 				<p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
 			</div>	
@@ -214,15 +232,15 @@
 	</footer>
     	<div class="form-map">
 			<form action=" " method="post">
-				<h2>Мы обязательно вам ответим</h2>
+				<h2>Мы обязательно вам ответим!</h2>
 				<div class="name">
-					<input type="text" name="name" ><label>Как вас зовут?</label>
+					<input type="text" name="name"><label>Как вас зовут?</label>
 				</div>	
-				<div class="name">
-					<input type="email" name="email" ><label>Ваша почта дял ответа?</label>
+				<div class="email">
+					<input type="email" name="email"><label>Ваша почта для ответа?</label>
 				</div>
 				<div class="comment">
-					<textarea name="comment"  placeholder="Напишите что-нибудь.." rows="4" cols="21"></textarea>
+					<textarea name="comment"  placeholder="Напишите что-нибудь.." rows="4" cols="51"></textarea>
 				</div>
 				<div class="form-feedback">		
 					<input type="submit" name="submit" placeholder="Отправить">
